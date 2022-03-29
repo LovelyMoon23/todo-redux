@@ -1,15 +1,14 @@
-import './App.css'
+import Container from 'components/Container';
+import Todos from 'components/Todos';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Container number={0} />
+      <hr />
+      <Todos />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
