@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Container = ({ number, onIncrease, onDecrease }) => {
+const Counter = ({ number, onIncrease, onDecrease }) => {
   return (
     <div>
       <h1>{number}</h1>
@@ -12,4 +12,4 @@ const Container = ({ number, onIncrease, onDecrease }) => {
   );
 };
 
-export default Container;
+export default Counter;

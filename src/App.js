@@ -1,12 +1,12 @@
-import Container from 'components/Container';
-import Todos from 'components/Todos';
+import CounterContainer from 'containers/CounterContainer';
+import TodosContainer from 'containers/TodosContainer';
 
 function App() {
   return (
     <div className="App">
-      <Container number={0} />
+      <CounterContainer />
       <hr />
-      <Todos />
+      <TodosContainer />
     </div>
   );
 }

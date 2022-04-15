@@ -1,4 +1,5 @@
 // 1. action 타입 정하기
+// '모듈이름/액션이름' 형태로 저장
 const INCREASE = 'counter/INCRESASE';
 const DECREASE = 'counter/DECREASE';
 

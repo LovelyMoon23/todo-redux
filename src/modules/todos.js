@@ -1,6 +1,7 @@
 import { Action } from 'history';
 
 // 1. 액션 타입 정하기
+// '모듈이름/액션이름' 형태로 저장
 const CHANGE_INPUT = 'todos/CHANGE_INPUT'; //인풋값을 변경함
 const INSERT = 'todos/INSERT'; //새로운 todo를 등록함
 const TOGGLE = 'todos/TOGGLE'; // todo를 체크/체크를 해제함
