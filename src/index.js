@@ -7,6 +7,7 @@ import rootReducer from 'modules/index';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+// composeWithDevTools는 리덕스 개발자 도구로 패키지를 통해 설치가능
 const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(

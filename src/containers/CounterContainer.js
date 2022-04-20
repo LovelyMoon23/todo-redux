@@ -1,3 +1,5 @@
+// 파일목적: 리덕스 스토어오 연동된 컴포넌트로 리덕스 스토어에 접근하여 상태를 받아오고 액션도 디스패치 함
+
 import { connect } from 'react-redux';
 import Counter from '../components/Counter';
 import { increase, decrease } from '../modules/counter';
@@ -36,8 +38,8 @@ const CounterContainer = ({ number, increase, decrease }) => {
 // )(CounterContainer);
 
 export default connect(
-  (state) => ({
-    number: state.counter.number,
+  ({ counter }) => ({
+    number: counter.number,
   }),
 
   {
