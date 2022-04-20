@@ -30,11 +30,13 @@ const TodosContainer = ({
 };
 
 export default connect(
+  // store에 저장된 두개의 reducer중(count, todos) todos를 넘겨주는 것
   ({ todos }) => ({
     input: todos.input,
     todos: todos.todos,
   }),
   {
+    // 액션 함수
     changeInput,
     insert,
     toggle,
