@@ -43,6 +43,7 @@ export default connect(
   ({ counter }) => ({
     number: counter.number,
   }),
+
   {
     increase,
     decrease,
